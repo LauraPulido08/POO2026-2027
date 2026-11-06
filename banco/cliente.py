@@ -64,7 +64,7 @@ class Cliente:
         print(f"El cliente {self.__nombres} ha ingresado al sistema")
         return True
 
-    def cambiar_clave(self) -> bool:
+    def cambiar_clave(self, celular, correo) -> bool:
         # logica para cambiar la clave usando celular y correo
             if celular != "" and correo != "":
                 if celular == self.__celular and correo == self.__correo:
@@ -74,7 +74,7 @@ class Cliente:
                     print("El celular o correo no coinciden")
                     return False
 
-    def actualizar_datos(self) -> bool:
+    def actualizar_datos(self, correo, edad) -> bool:
         # logica para actualizar los datos del cliente
         # actulizar correo y edad
         if correo != "" and edad != "":
